@@ -45,7 +45,7 @@ class CheckoutController extends Controller
                     'order_id' => $order->id,
                     'product_id' => $item->model->id,
                     'quantity' => $item->qty,
-                    'price' => $item->price
+                    'price' => $item->price*$item->qty
                 ]);
 
             }
@@ -53,7 +53,7 @@ class CheckoutController extends Controller
             Cart::instance('default')->destroy();
 
 
-            return redirect('/')->with('msg','Success Thank you');
+            return redirect('/')->with('msg','Terima Kasih, Barang Telah di Pesan. Silahkan Konfirmasi di Chat Twak.to');
             // Success
 
         } catch (Exception $e) {

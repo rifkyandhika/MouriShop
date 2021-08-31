@@ -43,13 +43,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password_confirmation">Confirm Password:</label>
-                        <input type="password" name="password_confirmation" placeholder="Confirm Password" id="password_confirmation" class="form-control">
+                        <label for="password_confirmation">Konfirmasi Password:</label>
+                        <input type="password" name="password_confirmation" placeholder="Konfirmasi Password" id="password_confirmation" class="form-control">
                     </div>
 
                     <div class="form-group">
                         <label for="address">Alamat:</label>
-                        <textarea name="address" placeholder="Address" id="address" class="form-control"></textarea>
+                        <textarea name="address" placeholder="Alamat" id="address" class="form-control"></textarea>
                     </div>
 
                     <div class="form-group">

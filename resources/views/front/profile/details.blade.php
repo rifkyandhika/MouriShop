@@ -1,7 +1,7 @@
 @extends('front.layouts.master')
 
 @section('content')
-<h2>Detail order user</h2>
+<h2 class="mt-5">Detail order user</h2>
 <hr>
 
 
@@ -97,7 +97,7 @@
                 <tr>
                     <th>ID Pesanan</th>
                     <th>Nama Produk</th>
-                    <th>Harga</th>
+                    <th>Total Harga</th>
                     <th>Quantity</th>
                     <th>Gambar</th>
                 </tr>

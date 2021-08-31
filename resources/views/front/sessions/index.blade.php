@@ -47,7 +47,7 @@
                         <div class="form-group">
                             <button class="btn btn-outline-success btn-lg btn-block"> Masuk</button>
                         </div>
-
+                        
                         <div class="form-group text-center">
                             <h5>
                                 Atau
@@ -55,10 +55,11 @@
                         </div>
 
                         <div class="form-group">
-                            <a href="{{  url('user/register') }}" class="btn btn-outline-info btn-lg btn-block">Daftar Disini</a>
+                            <a href="{{  url('user/register') }}" class="btn btn-outline-info btn-lg btn-block">Daftar</a>
                         </div>
+                        
                     </form>
-                    
+
                 </div>
             </div>
 

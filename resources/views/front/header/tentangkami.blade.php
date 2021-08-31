@@ -6,7 +6,7 @@
     	<div class="bg">
 	    	<div class="row">    		
 	    		<div class="col-sm-12">    			   			
-					<h2 class="mt-4">Tentang <strong>Kami</strong></h2>
+					<h2 class="mt-5">Tentang <strong>Kami</strong></h2>
 					</div>
 					<div class="contact-info">
 						<br>

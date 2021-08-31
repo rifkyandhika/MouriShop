@@ -20,12 +20,12 @@ class CartController extends Controller
         });
 
         if ($dubl->isNotEmpty()) {
-            return redirect()->back()->with('msg','Item is already in your cart');
+            return redirect()->back()->with('msg','Barang yang Dipilih Sudah di Keranjang');
         }
 
         Cart::add($request->id, $request->name, 1, $request->price)->associate('App\Product');
 
-        return redirect()->back()->with('msg','Item has been added to cart');
+        return redirect()->back()->with('msg','Barang di Tambahkan ke Keranjang');
 
     }
 
@@ -33,7 +33,7 @@ class CartController extends Controller
 
         Cart::remove($id);
 
-        return redirect()->back()->with('msg','Item has been removed from cart');
+        return redirect()->back()->with('msg','Barang di Hapus dari Keranjang');
 
     }
 
@@ -64,13 +64,13 @@ class CartController extends Controller
         ]);
 
         if ($validator->fails()) {
-            session()->flash('errors','Quantity must be between 1 and 5');
+            session()->flash('errors','Jumlah Barang Harus Lebih Dari 1 dan Maksimal 5');
             return response()->json(['success' => false]);
         }
 
         Cart::update($id, $request->quantity);
 
-        session()->flash('msg','Quantity has been updated');
+        session()->flash('msg','Jumlah Barang Telah Terupdate');
 
         return response()->json(['success' => true]);
 

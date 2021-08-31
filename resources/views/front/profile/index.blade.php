@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Profile</h2>
+    <h2 class="mt-5">Profile</h2>
     <hr>
 
     <h3>Detail User</h3>
@@ -43,7 +43,7 @@
                 <th>ID</th>
                 <th>Produk</th>
                 <th>Quantity</th>
-                <th>Total</th>
+                <th>Total Harga</th>
                 <th>Status</th>
                 <th>Action</th>
             </tr>
@@ -84,7 +84,7 @@
                             </table>
                         @endforeach
                     </td>
-
+                    
                     <td>
                         @if ($order->status)
                             <span class="badge badge-success">Confirmed</span>
